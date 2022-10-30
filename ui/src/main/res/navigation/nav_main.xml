@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/gifGridFragment">
+
+    <fragment
+        android:id="@+id/gifGridFragment"
+        android:name="com.natife.ui.gif_grid.GifListFragment"
+        android:label="GifGridFragment">
+        <action
+            android:id="@+id/action_gifGridFragment_to_gifViewerFragment"
+            app:destination="@id/gifViewerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gifViewerFragment"
+        android:name="com.natife.ui.viewer.GifViewerFragment"
+        android:label="GifViewerFragment">
+        <argument
+            android:name="index"
+            app:argType="java.lang.Integer" />
+    </fragment>
+</navigation>

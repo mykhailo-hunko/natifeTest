@@ -1,0 +1,7 @@
+<resources>
+    <string name="close_icon_description">Close Icon</string>
+    <string name="icon_search_description">Search Icon</string>
+    <string name="search_hint">Search here...</string>
+    <string name="error_message">Some error occurred</string>
+    <string name="list_title">Gifs list</string>
+</resources>
